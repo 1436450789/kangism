@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>join</title>
+	<link rel="stylesheet" href="MyWeb/jquery-3.2.1.min.js">
+	<link rel="stylesheet" href="MyWeb/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="MyWeb/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="MyWeb/bootstrap-3.3.7-dist/js/bootstrap.min.js">
+	<link rel="stylesheet" href="MyWeb/bootstrap-3.3.7-dist/js/npm.js">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		
+		*
+		{
+			box-sizing: border-box;
+			padding: 0px;
+			margin: 0px;
+			user-select: none;
+		}
+
+		.row p
+		{
+			display: block;
+			height: 50px;
+			color: #fff;
+			font-size: 25px;
+			font-weight: 3px;
+			padding: 17px;
+		}
+
+		.row a:hover
+		{
+			text-decoration: none;
+			background-color: #fff;
+			color: #000;
+		}
+
+		.footer
+		{
+			height: 350px;
+			background-color: #000;
+		}
+
+		.hr
+		{
+			height: 1px;
+			background-color: #2b2b2b;
+			width: 100%;
+			margin-top: 140px;
+		}
+
+		.part11
+		{
+			padding-top: 400px;
+			text-align: center;
+			color: #fff;
+			font-weight: bolder;
+			font-size: 45px;
+			letter-spacing: -1px;
+		}
+		
+		.part12
+		{
+			text-align: center;
+			color: #fff;
+			font-size: 45px;
+			font-weight: bolder;
+			letter-spacing: -1px;
+		}
+ 
+		.text1 h4
+		{
+			font-weight: bolder;
+			color: #585858;
+			font-size: 20px;
+		}
+
+		.col-xs-3 a
+		{
+			color: #b8b8b8;
+			margin-top: 15px;
+		}
+
+		.col-xs-3 a:hover
+		{
+			color: #585858;
+			background: rgba(0,0,0,0);
+
+		}
+
+		li
+		{
+			list-style: none;
+			color: #aeaeae;
+		}
+
+		.text2 a
+		{
+			text-decoration: none;
+			color: #333333;
+		}
+
+		.text2 a:hover
+		{
+			text-decoration: none;
+			color: #333333;
+			background-color: #ffd901;
+		}
+   }
+
+
+	</style>
+
+
+<script>
+ $(document).ready(function(){
+ 	$("body").ready(function(){
+ 		$("#load").fadeIn(1000);
+ 		$("#mouseload").fadeIn(1000);
+ 	});
+ });
+</script>
+
+
+</head>
+
+<body>
+<div class="header">
+<div class="nav navbar-fixed-top navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><img style="height: 20px;" src="img/logo.png"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" style="letter-spacing: 1px;">
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首<span style="visibility: hidden;">首页</span>页</a></li>
+			<li><a href="about.html"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;关于我们</a></li>
+			<li><a href="app.html"><span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;下载APP</a></li>
+			<li class="active"><a href="join.html"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;加入我们</a>
+			</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+	
+<div class="part">
+	<div style="height: 800px;background-image:url(img/g1.jpg);background-size: cover;background-repeat:no-repeat;background-position:center center;">
+		
+	<div id="load" style="display: none;height: auto;">	
+		<p class="part11">一些人等着被世界改变</p>
+		<p class="part12">而我们已经在</p>
+		<p class="part12">改变世界</p>
+	</div>
+
+	</div>
+</div>
+
+
+	<div style="height: 400px;width:100%;background-color: #fff;">
+		<div id="mouseload" style="display: none;">
+			<div class="row text1" style="width: auto;margin: 0px auto;padding-top: 50px;">
+
+				<div class="col-xs-3" style="text-align: center;">		
+					<h4>产品设计</h4>
+					<a class="btn1" data-toggle="modal" data-target="#myModal1">产品经理</a>
+
+					<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel1">产品经理</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、负责ofo APP的功能设计、需求分析；</li>
+							<li>2、跟进和推动UI设计、研发，确保最后产出能够符合需求；</li>
+							<li>3、收集用户反馈，挖掘用户真实的诉求；</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、3-5年产品工作经验，有O2O产品经验优先；</li>
+							<li>2、对细节体验有足够高的要求和标准；</li>
+							<li>3、对数据敏感，能够定量分析功能的好与坏；</li>
+							<li>4、强大的项目推进能力，善于沟通。</li>
+						</ul>
+
+
+            			</div>
+        				</div>
+    					</div>
+					</div>
+
+				</div>
+					
+				<div class="col-xs-3" style="text-align: center;">		
+					<h4>技术研发</h4>
+					<a class="btn1" data-toggle="modal" data-target="#myModal2">后端工程师</a><br>
+					<a class="btn1" data-toggle="modal" data-target="#myModal3">硬件工程师</a><br>
+					<a class="btn1" data-toggle="modal" data-target="#myModal4">嵌入式软件工程师</a>
+
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel2">后端工程师</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、负责公司平台产品的基础架构的设计与实现；</li>
+							<li>2、负责公司后端核心模块的设计与开发；</li>
+							<li>3、负责技术攻关和创新技术引用，解决产品开发过程中的高性能，高并发和高可靠性问题；</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、3年以上互联网开发经验，有大规模后端服务的设计和开发方面经验，对 Unix/Linux 有深入了解；</li>
+							<li>2、 出色的编码能力，精通如下三种语言之一（Nodejs,PHP,Java），尤其使用它们做过web服务；</li>
+							<li>3、对后端程序性能优化有丰富经验；</li>
+							<li>4、掌握Redis、Mongodb，Mysql等存储系统原理及应用；</li>
+							<li>5、熟悉常用的算法，熟悉开源框架，解决问题能力强；</li>
+							<li>6、对分布式计算，分布式存储的架构设计理念和动机有一定理解；</li>
+							<li>7、对HTTP协议有深刻的理解，熟悉TCP/IP等网络协议。</li>
+						</ul>
+            			</div>
+        				</div>
+    					</div>
+					</div>
+
+					<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel3">硬件工程师</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、负责智能硬件产品的需求分析，方案选型，方案架构；</li>
+							<li>2、负责相关的硬件电路设计，原理图，PCB，硬件测试；</li>
+							<li>3、能够独立完成硬件产品设计并最终导入到量产，并解决开发、生产中的问题；</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、电子，自动化，计算机等相关专业，本科以上学历；</li>
+							<li>2、了解精通主流的嵌入式单片机平台，并完成过完整的系统性的开发项目；</li>
+							<li>3、了解蓝牙，GSM等通信原理，掌握I2C,SPI,UART等通用接口协议；</li>
+							<li>4、能够熟练使用Protel/AUTOCAD/CORELDRAW/Cadence/Allego工具进行原理图和PCB设计；</li>
+							<li>5、熟练使用示波器，逻辑分析仪，频谱仪等通用仪器；</li>
+							<li>6、工作认真踏实，较强的逻辑分析能力及学习总结能力，良好的团队合作和沟通；</li>
+							<li>7、3年以上智能硬件设计和调试经验，有物联网或智能锁方面的经验者优先；熟悉工厂生产和工艺控制流程者优先。</li>
+						</ul>
+            			</div>
+        				</div>
+    					</div>
+					</div>
+
+						<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel4">嵌入式软件工程师</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、负责公司硬件产品的嵌入式软件的研发设计工作；</li>
+							<li>2、负责公司已有硬件产品的调试、测试的技术指导；</li>
+							<li>3、协助硬件工程师完成新产品的设计工作；</li>
+							<li>4、协助服务器端、APP端的软件工程师完成通信协议的制定；</li>
+							<li>5、完成嵌入式相关技术文档；</li>
+							<li>6、完成硬件测试平台上位机软件的开发。</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、电子、自动化、计算机相关专业本科以上，3-5年相关行业工作经验；</li>
+							<li>2、有良好的嵌入式软件工程架构思想，扎实的C语言基础；</li>
+							<li>3、熟悉ARM等嵌入式微处理器，熟悉UART、I2C、SPI等通信协议；</li>
+							<li>4、熟悉蓝牙BLE，GSM模块，GPS模块的开发使用；</li>
+							<li>5、熟悉C/C++或QT或Python，了解上位机编写者优先；</li>
+							<li>6、有物联网智能硬件工作经验者优先；</li>
+							<li>7、较强的学习能力，能够快速上手新技术的开发；</li>
+							<li>8、良好的沟通能力和团队合作。</li>
+						</ul>
+            			</div>
+        				</div>
+    					</div>
+					</div>
+
+				</div>
+				
+				<div class="col-xs-3" style="text-align: center;">		
+					<h4>品牌公关</h4>
+					<a class="btn1" data-toggle="modal" data-target="#myModal5">PR经理</a>
+
+					<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel5">PR经理</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、协助部门负责人做好大型公关事件策略，扩大品牌影响力；</li>
+							<li>2、撰写媒体稿件，建立维护日常新闻稿件的发布媒体，监控、评估发布媒体的宣传效果；</li>
+							<li>3、拓展和维护公司媒体资源关系网络，建立媒体档案库，及时反馈媒体合作意向；根据公司项目需求，联络、邀请各类媒体；</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、3-5年大型互联网公司PR工作经验；</li>
+							<li>2、文案功底扎实，媒体资源丰富；</li>
+							<li>3、本科以上学历。</li>
+						</ul>
+            			</div>
+        				</div>
+    					</div>
+					</div>
+				</div>
+
+				<div class="col-xs-3" style="text-align: center;">		
+					<h4>市场运营</h4>
+						<a class="btn1" data-toggle="modal" data-target="#myModal6">策略运营</a><br />
+						<a class="btn1" data-toggle="modal" data-target="#myModal7">用户运营</a>
+
+					<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel6">策略运营</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、依据时间、空间多个维度的供需关系，推动价格体系的完善；</li>
+							<li>2、预测区域性的供给和需求的平衡度，负责运力调度策略的搭建、完善；</li>
+							<li>3、通过数据发现当前策略问题，并对接策略技术等相关角色，制定优化方案，推动各方解决问题；</li>
+							<li>4、持续关注运营相关的业务数据指标，数据导向不断的推进优化策略；</li>
+							<li>5、负责产品上线后的业务分析与优化等，结合产品特征、流行热点，对产品的功能、特性、进行优化建议；</li>
+							<li>6、分析竞品，根据分析结果提出改进方案，定期收集整理产品优化需求，提出解决方案，并协调推进开发上线，提升用户体验及转化；</li>
+							<li>7、参与产品设计及开发的讨论，与产品和技术人员保持沟通直至产品上线；</li>
+							<li>8、分析所区域城市特点及市场现状，制定该城市的各项运营策略，实施活动的开展、落地、分解和执行，通过对运营活动过程的把控，保障活动的实施和结果的达成。</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、本科以上学历，3年及以上大中型互联网产品运营工作经验；</li>
+							<li>2、有过策略类、反作弊等相关工作经，了解O2O行业运营策略；</li>
+							<li>33、思路清晰，善于思考，逻辑严谨，具备较高的逻辑和数据敏感性，有出色的分析能力；</li>
+							<li>4、具备良好的沟通协调能力、执行力、学习能力；</li>
+							<li>5、承压能力强，能够快速反应，极速执行。</li>
+						</ul>
+            			</div>
+        				</div>
+    					</div>
+					</div>
+
+					<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
+    					<div class="modal-dialog">
+        				<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                			<br /><h4 style="font-size: 26px;padding-left: 10px;padding-top: 20px;" class="modal-title" id="myModalLabel7">后端工程师</h4><br />
+            			</div>
+            			<div class="modal-body" style="padding-left: 20px;line-height: 2;"><br />
+						<h5>岗位职责:</h5>
+						<ul>
+							<li>1、负责APP用户运营工作，直接对移动产品的下载量、新用户数量、首次成单、使用频次等指标负责；</li>
+							<li>2、精准定位目标用户群，结合用户使用场景，建立相应的用户运营机制、模型、策略；</li>
+							<li>3、制定用户运营策略，结合场景开展精准营销，并对执行结果和用户使用APP所产生的数据进行分析，从而二次优化用户运营策略；</li>
+							<li>4、利用个性化、精细化运营手段，提升用户消费体验，提升新客转化率、沉默用户召回；</li>
+							<li>5、设计用户激励机制，与产品经理合作，逐步完善工具和产品；</li>
+							<li>6、通过各种方式和渠道拓展新用户，管理和优化内外部渠道策略，不断优化用户拉新、活跃、转化销售、留存的机制；</li>
+							<li>7、监控和分析产品及运营各项数据，收集用户反馈，通过数据挖掘对用户需求进行有效分析并提出改良建议，提升交易量和用户活跃度。</li>
+						</ul>
+						<br />
+						<h5>任职要求：</h5>
+						<ul>
+							<li>1、3年以上用户运营工作经验；</li>
+							<li>2、工作经历中，曾就职于BAT或OTA一线互联网公司优先；</li>
+							<li>3、具有利用优秀的数据和逻辑分析能力来进行决策；</li>
+							<li>4、结果导向，富有激情和创新精神，把困难当作挑战而非瓶颈；</li>
+							<li>5、具有较好的沟通协调能力和服务意识，能承受较大的工作压力，具有良好的职业操守。</li>
+						</ul>
+            			</div>
+        				</div>
+    					</div>
+					</div>
+
+				</div>
+
+			</div>
+			
+			<div class="text2" style="display:block;margin:20px auto;height: 100px;width: 200px;">
+
+				
+				<a style="display: block;margin-top:40px;height: 58px;width: 134px;border-radius: 30px;border: 1px solid #b8b8b8;text-align: center;line-height: 58px;margin: 0 auto" href="https://www.lagou.com/gongsi/44749.html" target="_blank">更多职位</a>
+				<p style="color: #929292;margin-top: 40px;font-size: 15px;text-align: center;">联系方式：hr@ofo.so</p>
+
+			</div>
+			
+
+
+
+
+		</div>
+	</div>
+
+
+
+	<div class="footer">
+
+		<div style="display: block;height: 100px;width: 340px;margin:0px auto;padding-top: 40px;">
+			
+			<img src="img/f1.png" style="height: 40px;width: 350px;">
+			<p style="color: #aeaeae;padding-top:20px;text-align: center;">4001 507 507（周一至周日：7:00 - 22:00）</p>
+			<p style="color: #aeaeae;text-align: center;">北京市海淀区北四环西路58号理想国际大厦11层</p>
+			<p style="color: #aeaeae;text-align: center;"><img style="margin-right:30px;height: 26px;width: 26px;" src="img/b1.png"><img style="height: 25px;width: 25px;" src="img/b2.png"></p>
+		</div>
+
+		<div class="hr"></div>
+
+		<p style="color: #aeaeae;text-align: center;padding-top: 18px;font-size: 12px;">Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</p>
+		
+	</div>
+
+
+</body>
+</html>
